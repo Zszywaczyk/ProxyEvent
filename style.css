@@ -1,0 +1,387 @@
+/*Global*/
+body{
+    margin: 0 0 0 0;
+}
+
+/*===================================================*/
+/*Panel navigacyjny*/
+#nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(to bottom, #5B5B5B 0%, #5B5B5B 95%, #0E0E0E 100%);
+    z-index: 10;
+}
+#img_logo{
+    position: absolute;
+    left: 80px;
+    float: left;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: solid 2px purple;
+    border-right: solid 2px purple;
+    border-bottom: solid 2px purple;
+    border-radius: 5px;
+}
+#pnav{  /*Kontener na elementy nav*/
+    position: relative;
+    float: right;
+    right: 20px;
+    top: 0;
+    display: inline;
+    color: white;
+}
+#reg_link{  /*Link do rejestracji*/
+    text-decoration: none;
+    border: 2px solid purple;
+    border-radius: 5px;
+    background-color: #2D2D2D;
+    color: white;
+    padding-top: 100%;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+
+}
+#reg_link:hover{    /*Link do po najechaniu*/
+    color: orange;
+    background-color: #434343;
+}
+#button{    /*Przycisk zaloguj*/
+    text-decoration: none;
+    border: 2px solid purple;
+    background-color: #2D2D2D;
+    color: white;
+    border-top: 5px;
+    padding-top: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#button:hover{  /*Przycisk zaloguj po najechaniu*/
+    color: orange;
+    background-color: #434343;
+}
+#inp_usr{   /*User input*//*Username*/
+    background-color: #5b5b5b;
+    border: 2px solid purple;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    max-width: 120px;
+}
+#inp_usr:focus{      /*User input po przycisnieciu*/
+    border-color: red;
+}
+#inp_usr:hover{      /*User input po najechaniu*/
+    border-color: orange;
+}
+#inp_pas{        /*Password input*/
+    background-color: #5b5b5b;
+    border: 2px solid purple;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    max-width: 120px;
+}
+#inp_pas:focus{     /*Password po przycisnieciu*/
+    border-color: red;
+}
+#inp_pas:hover{
+    border-color: orange;
+}
+#pas_rec{       /*Zapomnialem hasla*/
+    font-size: 12px;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    top: 26px;
+    color: red;
+}
+#pas_rec:hover{
+    color: orange;
+}
+/*===================================================*/
+/*Menu          (Ponizej navbar)*/
+
+#menu{      /*Menu kentener*/
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 800px;
+    background-color: blue;
+}
+#pro_but{
+    position: relative;
+    float: left;
+    width: 33%;
+    min-width: 100px;
+    min-height: 300px;
+    max-height: 800px;
+    background-color: purple;
+}
+#loc_but{
+    position: relative;
+    float: left;
+    width: 34%;
+    min-width: 100px;
+    min-height: 300px;
+    max-height: 800px;
+    background-color: red;
+}
+#org_but{
+    position: relative;
+    float: left;
+    width: 33%;
+    min-width: 100px;
+    min-height: 300px;
+    max-height: 800px;
+    background-color: orange;
+}
+#menu img{
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#menu p{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8vw;
+    margin-top: 10px;
+}
+/*Content*/
+.przyklad{
+    float: left;
+    width: 339px;
+    height: 600px;
+    background-color: #3E3E3E;
+    margin: 20px;
+}
+#choice1, #choice1 p{
+    position: relative;
+    height: 40px;
+    background-color: purple;
+    width: 100%;
+    font-size: 2.2vw;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#choice2, #choice2 p{
+    position: relative;
+    height: 40px;
+    background-color: red;
+    width: 100%;
+    font-size: 2.2vw;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#choice3, #choice3 p{
+    position: relative;
+    height: 40px;
+    background-color: orange;
+    width: 100%;
+    font-size: 2.2vw;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*===============================*/
+/*form_addAccount.php*/
+#form_cont{
+    background-color: purple;
+    width: 100%;
+    height: 92%;
+    position: absolute;
+}
+#fform{
+    background-color: #EA00EA;
+    width: 40%;
+    height: 78%;
+    margin: 30px auto;
+    color: white;
+    text-align: center;
+}
+#form_back{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #5B5B5B;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+#form_back p{
+    margin: 0 0 0 0;
+    padding-top: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    color: white;
+}
+#aform_back{
+    text-decoration: none;
+}
+
+#form_email, #form_pass, #form_login, #form_sele {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#form_submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+/*===============================================================*/
+/*Organizator.php*/
+/*img dla (dodaj) nowy projekt*/
+#orgaction1{
+    position: relative;
+    left: 250px;
+    float: left;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: solid 2px purple;
+    border-right: solid 2px purple;
+    border-bottom: solid 2px purple;
+    border-radius: 5px;
+}
+#orgaction1:hover{
+    background-color: navy;
+}
+/*=====*/
+/*tooltip czyli pasek opisu*/
+.aaa #texttip1{
+    visibility: hidden;
+    width: 120px;
+    background-color: #202020;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 66;
+    top: 46px;
+    left: 282px;
+    margin-left: -60px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.aaa #texttip1::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+.aaa:hover #texttip1{
+    visibility: visible;
+    opacity: 1;
+}
+/*======================*/
+/*img dla (znajdz) wolontariusza*/
+#orgaction2{
+    position: relative;
+    left: 248px;
+    float: left;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: solid 2px purple;
+    border-right: solid 2px purple;
+    border-bottom: solid 2px purple;
+    border-radius: 5px;
+}
+#orgaction2:hover{
+    background-color: orange;
+}
+/*=====*/
+/*tooltip czyli pasek opisu*/
+.bbb #texttip2{
+    visibility: hidden;
+    width: 120px;
+    background-color: #202020;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 66;
+    top: 46px;
+    left: 345px;
+    margin-left: -60px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.bbb #texttip2::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+.bbb:hover #texttip2{
+    visibility: visible;
+    opacity: 1;
+}
