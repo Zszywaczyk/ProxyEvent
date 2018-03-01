@@ -5,3 +5,7 @@ Projekt na zaliczenie. Mój pierwszy projekt napisany w PHP.
 Link do projektu: https://zszywacz.000webhostapp.com/proxyevent/index.php
 
 Więcej infromacji w Proxy Event najnowsze7.pdf
+
+Dla organizatora:
+  * Login: tomasz<br>
+  * Hasło: tomasz<br>
